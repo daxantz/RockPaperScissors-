@@ -50,10 +50,26 @@ const playRound = (playerSelection, cpuSelection) => {
     }
 }
 
-    let playerSelection = "rock";
-    let cpuSelection = getComputerChoice();
+/*
+playGame()
 
-console.log(playRound(playerSelection, cpuSelection));
+*/
+
+const playGame = () => {
+    let cpuSelection = getComputerChoice();
+    for(let i = 0; i < 5; i++){
+        let playerSelection = prompt("Choose rock, paper, or scissors");
+        console.log(playRound(playerSelection, cpuSelection))
+        
+    }
+}
+
+playGame();
+
+//     let playerSelection = "rock";
+//     let cpuSelection = getComputerChoice();
+
+// console.log(playRound(playerSelection, cpuSelection));
 
 
 
