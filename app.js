@@ -80,19 +80,21 @@ const updateScore = () => {
         paperBtn.disabled = true;
         scissorsBtn.disabled = "true";
         restartBtn.disabled = false;
+        p.innerText = '';
     } else if(cpuScore === 5 && playerScore < 5) {
         scores.innerText = "Cpu is the winner";
         rockBtn.disabled = true;
         paperBtn.disabled = true;
         scissorsBtn.disabled = true;
         restartBtn.disabled = false;
+        p.innerText = '';
     }
 }
 
 const restartGame = () => {
     playerScore = 0;
     cpuScore = 0;
-    p.innerText = '';
+    
     rockBtn.disabled = false;
     paperBtn.disabled = false;
     scissorsBtn.disabled = false;
