@@ -1,6 +1,6 @@
-const rockBtn = document.querySelector("#rock");
-const paperBtn = document.querySelector("#paper");
-const scissorsBtn = document.querySelector("#scissors");
+const rockBtn = document.querySelector("#rockBtn");
+const paperBtn = document.querySelector("#paperBtn");
+const scissorsBtn = document.querySelector("#scissorsBtn");
 const resultContainer = document.querySelector(".results");
 const p = document.createElement("p");
 const scores = document.querySelector(".score");
@@ -45,7 +45,7 @@ const playRound = (playerSelection, cpuSelection) => {
         p.innerText = "You win! rock beats scissors";
         playerScore++;
     } else if (playerSelection === "rock" && cpuSelection === "rock") {
-        const p = document.createElement("p");
+        
         p.innerText = "You both chose rock, It's a tie";
         ties++;
     } else if (playerSelection === "paper" && cpuSelection === "scissors") {

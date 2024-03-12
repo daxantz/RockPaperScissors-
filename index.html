@@ -4,20 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="/styles/styles.css">
     <script src="app.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>Rock, Paper, Scissors</h1>
+        <p>Choose what to throw to start the game</p>
+        <h2 class="score"></h2>
 
-    <button class="btn" id="rock">Rock</button>
-    <button class="btn" id="paper">Paper</button>
-    <button class="btn" id="scissors">Scissors</button>
-    <button class="btn" id="restart">Restart</button>
 
-    <h1 class="score"></h1>
+    </header>
+    
+    <div class="btnContainer">
 
-    <div class="results">
+        <div class="choice">
+            <img class="img" id="rock" src="/images/graveler.jpg" alt="rock">
+            <button class="btn" id="rockBtn">Rock</button>
 
+        </div>
+        
+        <div class="choice">   
+            <img class="img" id="paper" src="/images/map.jpg" alt="paper">
+            <button class="btn" id="paperBtn">Paper</button>
+
+        </div>
+
+        <div class="choice">
+            <img class="img" id="scissors" src="/images/scissors.avif" alt="scissors">
+            <button class="btn" id="scissorsBtn">Scissors</button>
+
+        </div>
+        
+        
+        
+        
+        
     </div>
+    <div class="results">
+        <button class="btn" id="restart">Restart</button>
+    </div>
+    
+    
+
+    
+
+    
     
 </body>
 </html>
